@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane Doe — Graphic Designer & Art Director</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Netlify Identity widget for simple client email/password login -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+
+    <!-- 1. Header & Brand Image Logo -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo-link">
+                <img src="patobee.png" alt="Jane Doe Studio Logo" class="brand-logo-img">
+            </a>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Intro -->
+    <section class="hero container">
+        <h1>Visual Designer & Brand Architect</h1>
+        <p>Crafting intentional brand identities, striking packaging, and immersive digital experiences.</p>
+    </section>
+
+    <!-- 2. Portfolio Gallery (Dynamic Content) -->
+    <section id="work" class="container">
+        <div id="gallery-grid" class="gallery-grid">
+            <!-- Dynamic project cards load here via main.js -->
+            <p class="loading" style="color: #777;">Loading portfolio works...</p>
+        </div>
+    </section>
+
+    <!-- 3. About Section -->
+    <section id="about" class="container about-section">
+        <div class="about-grid">
+            <div class="about-image">
+                <img src="WhatsApp Image 2026-11-04 at 13.21.10.jpeg" alt="Jane Doe Portrait">
+            </div>
+
+            <div class="about-content">
+                <span class="sub-heading">About Me</span>
+                <h2>Designing with intention, precision, and narrative depth.</h2>
+                <p>
+                    I am an independent Art Director and Visual Designer specializing in holistic brand identities, packaging systems, and editorial print design. I collaborate with ambitious brands to translate their core vision into memorable visual touchpoints.
+                </p>
+                
+                <div class="skills-list">
+                    <h3>Core Capabilities</h3>
+                    <ul>
+                        <li>Brand Identity & Strategy</li>
+                        <li>Packaging & Label Design</li>
+                        <li>Typography & Editorial Layouts</li>
+                        <li>Art Direction</li>
+                        <li>Adobe CC & Figma Mastery</li>
+                    </ul>
+                    <br>
+                    <h3>Softwares we work with</h3>
+                    <ul>
+                        <li>Adobe illustrator</li>
+                        <li>Photoshop</li>
+                        <li>indesign</li>
+                        <li>Aftereffects</li>
+                    </ul>
+                    <br>
+                    <h3>Languages Spokem</h3>
+                    <ul>
+                        <li>English</li>
+                        <li>Kiswahili</li>
+                        <li>Kamba</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Contact Section -->
+    <section id="contact" class="container contact-section">
+        <span class="sub-heading">Get in Touch</span>
+        <h2>Let's Create Together</h2>
+        <p>We take on various designs, posters, logo creation and design advisory roles. We also design clothes to designs of your respective choices.</p>
+
+        <div class="contact-action-wrapper">
+            <p>You can email us on <b>patobeebrandingservices@gmail.com</b></p>
+             
+            <div class="social-links">
+                <a href="https://facebook.com/patobeebranding/">Facebook</a>
+                <i>Find us on WhatsApp <b><u>0757069202</u></b></i>
+            </div>
+                       
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>© 2026 Patrick Njiru. All rights reserved.</p>
+            <div class="footer-admin-link">
+                <a href="/admin/">Client Login</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox">
+        <span id="lightbox-close" class="lightbox-close">&times;</span>
+        <img id="lightbox-img" class="lightbox-content" src="" alt="Enlarged Project Preview">
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+
+    <!-- Main JavaScript Logic -->
+    <script src="main.js"></script>
+
+    <!-- Netlify Identity redirect script logic for admin login -->
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+</body>
+</html>

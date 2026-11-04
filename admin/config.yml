@@ -1,0 +1,27 @@
+backend:
+  name: github
+  repo: your-username/your-repo-name  # Replace with your actual GitHub username and repository name
+  branch: main                       # Or master, matching your GitHub branch
+
+media_folder: "assets/uploads"
+public_folder: "assets/uploads"
+
+collections:
+  - name: "portfolio"
+    label: "Portfolio Projects"
+    files:
+      - file: "data/projects.json"
+        label: "Projects Gallery"
+        name: "projects_list"
+        fields:
+          - label: "Projects"
+            name: "projects"
+            widget: "list"
+            summary: '{{fields.title}} ({{fields.category}})'
+            fields:
+              - { label: "Project Title", name: "title", widget: "string" }
+              - { label: "Category", name: "category", widget: "string", hint: "e.g. Branding, Packaging, Typography" }
+              - { label: "Client Name", name: "client", widget: "string", required: false }
+              - { label: "Year", name: "year", widget: "string", required: false }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Thumbnail Image", name: "thumbnail", widget: "image" }
