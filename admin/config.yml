@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: your-username/your-repo-name  # Replace with your actual GitHub username and repository name
+  repo: believer-85/designer-portfolio  # Replace with your actual GitHub username and repository name
   branch: main                       # Or master, matching your GitHub branch
 
 media_folder: "assets/uploads"
