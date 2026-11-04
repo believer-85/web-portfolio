@@ -1,9 +1,8 @@
 backend:
   name: github
-  repo: believer-85/designer-portfolio   # Replace 'your-repo-name' with your exact GitHub repository name!
-  branch: main                       # Or master, matching your GitHub branch
-  base_url: https://site-auth.decapcms.org
-  auth_endpoint: oauth
+  repo: believer-85/designer-portfolio
+  branch: main
+  base_url: https://app.decapcms.org
 
 media_folder: "assets/uploads"
 public_folder: "assets/uploads"
