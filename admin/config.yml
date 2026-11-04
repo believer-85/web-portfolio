@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: believer-85/designer-portfolio
+  repo: believer-85/designer-porfolio
   branch: main
   base_url: https://app.decapcms.org
 
