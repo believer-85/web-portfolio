@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patrick Njiru — Graphic Designer & Art Director</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Netlify Identity widget for simple client email/password login -->
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
 
@@ -14,7 +12,7 @@
     <header class="header">
         <div class="container nav-container">
             <a href="#" class="brand-logo-link">
-                <img src="patobee.png" alt="Jane Doe Studio Logo" class="brand-logo-img">
+                <img src="patobee.png" alt="Patobee Studio Logo" class="brand-logo-img">
             </a>
             
             <nav>
@@ -45,7 +43,7 @@
     <section id="about" class="container about-section">
         <div class="about-grid">
             <div class="about-image">
-                <img src="WhatsApp Image 2026-11-04 at 13.21.10.jpeg" alt="Jane Doe Portrait">
+                <img src="profile.jpeg" alt="Patrick Njiru Portrait">
             </div>
 
             <div class="about-content">
@@ -67,13 +65,13 @@
                     <br>
                     <h3>Softwares we work with</h3>
                     <ul>
-                        <li>Adobe illustrator</li>
+                        <li>Adobe Illustrator</li>
                         <li>Photoshop</li>
-                        <li>indesign</li>
-                        <li>Aftereffects</li>
+                        <li>InDesign</li>
+                        <li>After Effects</li>
                     </ul>
                     <br>
-                    <h3>Languages Spokem</h3>
+                    <h3>Languages Spoken</h3>
                     <ul>
                         <li>English</li>
                         <li>Kiswahili</li>
@@ -91,13 +89,11 @@
         <p>We take on various designs, posters, logo creation and design advisory roles. We also design clothes to designs of your respective choices.</p>
 
         <div class="contact-action-wrapper">
-            <p>You can email us on <b>patobeebrandingservices@gmail.com</b></p>
+            <p>You can email us on <a href="mailto:patobeebrandingservices@gmail.com"><b>patobeebrandingservices@gmail.com</b></a></p>
              
             <div class="social-links">
-                <a href="https://facebook.com/patobeebranding/">Facebook</a>
+                <a href="https://facebook.com/patobeebranding/" target="_blank">Facebook</a>
                 <i>Find us on WhatsApp <b><u>0757069202</u></b></i>
-            </div>
-                       
             </div>
         </div>
     </section>
@@ -107,7 +103,7 @@
         <div class="container footer-content">
             <p>© 2026 Patrick Njiru. All rights reserved.</p>
             <div class="footer-admin-link">
-                <a href="/admin/">Client Login</a>
+                <a href="./admin/">Client Login</a>
             </div>
         </div>
     </footer>
@@ -121,18 +117,5 @@
 
     <!-- Main JavaScript Logic -->
     <script src="main.js"></script>
-
-    <!-- Netlify Identity redirect script logic for admin login -->
-    <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
-          }
-        });
-      }
-    </script>
 </body>
 </html>
