@@ -1,6 +1,6 @@
 backend:
-  name: github
-  repo: believer-85/designer-portfolio
+  name: turbo-github
+  turbo_site_id: "1f5aa061-6bbb-4422-b9b0-ca0e77514884"
   branch: main
   base_url: https://app.decapcms.org
 
